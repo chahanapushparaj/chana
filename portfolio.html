@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    ```css
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: pageLoad 1s ease-in-out;
+}
+
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav ul li {
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: translateY(-3px);
+}
+
+nav ul li a {
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+.hero {
+    animation: heroAppear 1.2s ease;
+}
+
+@keyframes heroAppear {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 span {
+    display: inline-block;
+    animation: namePop 1s ease 0.5s both;
+}
+
+@keyframes namePop {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.main-btn {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.social a {
+    transition: all 0.3s ease;
+}
+
+.social a:hover {
+    transform: translateY(-4px);
+}
+
+.section-heading {
+    animation: headingAnimation 1s ease;
+}
+
+@keyframes headingAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-box {
+    transition: all 0.4s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.education-card {
+    transition: all 0.4s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.project-card {
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.project-card > span {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover > span {
+    transform: scale(1.2);
+}
+
+.project-card a {
+    transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+    letter-spacing: 1px;
+}
+
+.skill {
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-7px) scale(1.05);
+}
+
+.contact-info {
+    animation: contactAppear 1s ease;
+}
+
+@keyframes contactAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-info a {
+    transition: all 0.3s ease;
+}
+
+.contact-info a:hover {
+    letter-spacing: 1px;
+}
+
+footer {
+    transition: all 0.3s ease;
+}
+
+footer:hover {
+    letter-spacing: 1px;
+}
+```
+</style>
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+             <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home">
+
+        <div class="hero">
+
+            <p class="small-title">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>
+                Hi, I'm <span>Chahana</span>
+            </h1>
+
+            <h2>Computer Science & Engineering Student</h2>
+
+            <p class="intro">
+                I am passionate about learning technology, designing websites
+                and turning creative ideas into simple digital experiences.
+            </p>
+
+            <a href="#projects" class="main-btn">View My Projects</a>
+
+            <div class="social">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Email</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <div class="section-heading">
+            <p>WHO I AM</p>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-box">
+
+            <p>
+                I am a Computer Science and Engineering student who enjoys
+                exploring web development and new technologies.
+            </p>
+
+            <p>
+                I believe that every new skill is a step towards becoming
+                better. I am currently improving my technical knowledge,
+                communication skills and creativity.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+
+     <section id="education">
+
+        <div class="section-heading">
+            <p>MY JOURNEY</p>
+            <h2>Education</h2>
+     <div class="education-card">
+
+    <h3>School Education</h3>
+
+    <h4>Higher Secondary Education</h4>
+
+    <p>
+        Vishwesvaraiyah Matriculation Higher Secondary School,
+        Thoppur, Anthiyur
+    </p>
+
+    <span>Completed</span>
+
+</div>
+
+ 
+        </div>
+
+        <div class="education-card">
+
+            <h3>Bachelor of Engineering</h3>
+
+            <h4>Computer Science and Engineering</h4>
+
+            <p>
+                Bannari Amman Institute of Technology
+            </p>
+
+            <span>Currently Pursuing</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+         <h2>My Projects</h2>
+
+        <div class="section-heading">
+            <p>WHAT I HAVE BUILT</p>
+           
+        </div>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <span>01</span>
+                <h3> Google Form</h3>
+                <p>
+                    A creative Google form website designed using HTML and CSS.
+                </p>
+                <a href="#projects">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <span>02</span>
+                <h3>Calculator</h3>
+                <p>
+                    A simple and clean calculator interface created with HTML
+                    and CSS.
+                </p>
+                <a href="#projects">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <span>03</span>
+                <h3>Personal Portfolio</h3>
+                <p>
+                    My personal portfolio to showcase my skills and projects.
+                </p>
+                <a href="#projects">View Project →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <div class="section-heading">
+            <p>WHAT I KNOW</p>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Web Design</div>
+            <div class="skill">VS Code</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+   <section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>I'd love to hear from you!</p>
+
+    <div class="contact-info">
+        <p>📧 Email: chahanpushparaj@gmail.com</p>
+        <p>📱 Phone: +91 9150000577</p>
+        <p>📍 Location: Anthiyur, Erode</p>
+        <p>🔗 LinkedIn<a href="https://www.linkedin.com/in/chahana-pp-521bb9432/" target="_blank">My LinkedIn</a></p>
+        <p>💻 GitHub:<a href="https://github.com/chahanapushparaj" target="_blank">My GitHub</a>
+</p>
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Chahana. Designed & Built with HTML and CSS.</p>
+    </footer>
+
+
+    
+</body>
+</html>
