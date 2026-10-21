@@ -1,0 +1,12 @@
+body{background-image: url("depositphotos_247409498-stock-photo-copy-space-business-economic-technology (1).jpg");}
+
+.p{font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: x-large;
+}
+
+.dropdown{display: flex;
+    font-family: 'Courier New', Courier, monospace;
+          font-size: medium;
+          ;
+          gap:5px;
+         }
